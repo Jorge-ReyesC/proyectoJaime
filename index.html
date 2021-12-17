@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hybrid Bootstrap Admin Template</title>
+    
+    <title>Hybrid Bootstrap Admin Template</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> 
+    <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="/assets/js/graficos.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i ></i> <strong>Conaset</strong></a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                        Inicio
+                        <i class="fa fa-user fa-fw"></i> 
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                        Nosotros
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                        Vehículos y Vías
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                        Biblioteca
+                        
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                       Política de Seguridad de Tránsito
+                        
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+                <li class="dropdown">
+                    <a  href="#" aria-expanded="false">
+                        Orientación a Víctimas
+                    </a>
+
+                    <!-- /.dropdown-user -->
+                </li>
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="ui-elements.html"><i class="fa fa-desktop"></i> UI Elements</a>
+                    </li>
+					<li>
+                        <a href="chart.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    </li>
+                    
+                    <li>
+                        <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
+                    </li>
+                    <li>
+                        <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Conaset <small> Graficos de informacion</small>
+                        </h1>
+						<ol class="breadcrumb">
+  <li><a href="#">Inicio</a></li>
+  <li><a href="#">Biblioteca</a></li>
+  <li class="active">Observatorio De Datos</li>
+</ol>
+                    </div>
+                </div>
+				
+				
+                <!-- /. ROW  -->
+
+             
+				
+				<div class="row">
+				<div class="col">
+						<div class="panel panel-default">
+						<div class="panel-heading">
+							Area Chart
+						</div>
+						<div class="panel-body">
+							<div id="morris-area-chart"></div>
+						</div>
+					</div>   
+					</div>		
+					
+				</div> 
+                <div class="row">
+                    <div class="col">
+                            <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Siniestros ocurridos entre los años 2000 y 2020 ordenado por mes
+                            </div>
+                            <div >
+                                <div id="myChart2"></div>
+                            </div>
+                            </div>   
+                    </div>		
+                        
+                            <div class="col-xl-20 ">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Line Char
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart"></div>
+                            </div>
+                        </div>  
+                        </div>
+                        
+                    </div> 
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Bar Chart Example
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                                <div id="myChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Donut Chart Example
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="col">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Los 3 meses con mas siniestros ocurridos en el año 2020
+                    </div>
+                    <div >
+                        <div id="myChart3"></div>
+                    </div>
+                    </div>   
+            </div>
+            <div class="col-xl -12">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    Tipos De Siniestros ocurridos en el año 2020
+                </div>
+                <div >
+                    <div id="myChar///t4"></div>
+                </div>
+                </div>
+				<div class="row">
+				<div class="col-md-12">
+				
+					</div>		
+				</div> 	
+                <!-- /. ROW  -->
+
+	   
+				
+				
+				
+
+			
+		
+				<footer><p>Todos los derechos reservado. Creado por: <a href="">Jorge Reyes Celpa</a></p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+<!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+</body>
+
+</html>
